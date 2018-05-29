@@ -14,6 +14,7 @@
 		4C2949C420BD8CE700EAB096 /* TableauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2949C320BD8CE700EAB096 /* TableauController.swift */; };
 		4C2949C620BD90A300EAB096 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2949C520BD90A300EAB096 /* Chanson.swift */; };
 		4C2949C820BD985C00EAB096 /* ChansonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2949C720BD985C00EAB096 /* ChansonCell.swift */; };
+		4C2949CA20BDDDAB00EAB096 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2949C920BDDDAB00EAB096 /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4C2949C320BD8CE700EAB096 /* TableauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauController.swift; sourceTree = "<group>"; };
 		4C2949C520BD90A300EAB096 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
 		4C2949C720BD985C00EAB096 /* ChansonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChansonCell.swift; sourceTree = "<group>"; };
+		4C2949C920BDDDAB00EAB096 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4C2949C320BD8CE700EAB096 /* TableauController.swift */,
 				4C2949C520BD90A300EAB096 /* Chanson.swift */,
 				4C2949C720BD985C00EAB096 /* ChansonCell.swift */,
+				4C2949C920BDDDAB00EAB096 /* VideoController.swift */,
 			);
 			path = "Lecteur Youtube";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2949CA20BDDDAB00EAB096 /* VideoController.swift in Sources */,
 				4C2949C420BD8CE700EAB096 /* TableauController.swift in Sources */,
 				4C2949B220BD88EC00EAB096 /* AppDelegate.swift in Sources */,
 				4C2949C820BD985C00EAB096 /* ChansonCell.swift in Sources */,
