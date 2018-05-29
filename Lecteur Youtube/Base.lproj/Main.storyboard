@@ -21,6 +21,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaQ-69-XZ0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="165" id="Dwr-8L-APO" customClass="ChansonCell" customModule="Lecteur_Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dwr-8L-APO" id="dZy-ZC-YXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="l15-yS-Xzy">
+                                                    <rect key="frame" x="8" y="7" width="150" height="150.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="UJL-uk-fUB"/>
+                                                        <constraint firstAttribute="width" constant="150" id="ZsY-db-lfc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmT-QX-prS">
+                                                    <rect key="frame" x="166" y="5" width="209" height="154.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l15-yS-Xzy" firstAttribute="centerY" secondItem="dZy-ZC-YXJ" secondAttribute="centerY" id="3cL-Ua-R6P"/>
+                                                <constraint firstItem="nmT-QX-prS" firstAttribute="top" secondItem="dZy-ZC-YXJ" secondAttribute="top" constant="5" id="9cg-xC-lI3"/>
+                                                <constraint firstAttribute="trailing" secondItem="nmT-QX-prS" secondAttribute="trailing" id="Svq-yj-iDf"/>
+                                                <constraint firstItem="l15-yS-Xzy" firstAttribute="leading" secondItem="dZy-ZC-YXJ" secondAttribute="leading" constant="8" id="bzY-ej-6wa"/>
+                                                <constraint firstAttribute="bottom" secondItem="nmT-QX-prS" secondAttribute="bottom" constant="5" id="cek-QH-heA"/>
+                                                <constraint firstItem="nmT-QX-prS" firstAttribute="leading" secondItem="l15-yS-Xzy" secondAttribute="trailing" constant="8" id="gNG-wy-6WD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artisteEtTitreLabel" destination="nmT-QX-prS" id="WkM-VS-x6Q"/>
+                                            <outlet property="miniature" destination="l15-yS-Xzy" id="FrX-yL-WrA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,4 +97,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="781.25937031484261"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="960" height="553"/>
+    </resources>
 </document>
